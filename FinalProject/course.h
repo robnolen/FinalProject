@@ -9,9 +9,7 @@
 #ifndef FinalProject_course_h
 #define FinalProject_course_h
 
-#include <string>
-#include <iostream>
-#include <vector>
+#include "FinalProject.h"
 
 using namespace std;
 class Course
@@ -31,9 +29,9 @@ public:
     
 protected:
     string courseName;
-    vector<int> examScores;
-    vector<int> quizScores;
-    vector<int> labScores;
+    stdIntVector examScores;
+    stdIntVector quizScores;
+    stdIntVector labScores;
 };
 
 
