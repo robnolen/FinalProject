@@ -11,7 +11,6 @@
 
 #include "FinalProject.h"
 
-using namespace std;
 class Course
 {
 public: 
@@ -24,11 +23,11 @@ public:
     void addQuizScore(int);
     void addLabScore(int);
     void print();
-    Course(string);
+    Course(stdString);
     ~Course();
     
 protected:
-    string courseName;
+    stdString courseName;
     stdIntVector examScores;
     stdIntVector quizScores;
     stdIntVector labScores;

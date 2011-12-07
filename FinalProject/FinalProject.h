@@ -18,5 +18,4 @@ typedef std::vector<int> stdIntVector;
 typedef std::vector<int>::iterator stdIntVectorIterator;
 
 
-
 #endif

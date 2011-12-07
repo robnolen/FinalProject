@@ -6,20 +6,14 @@
 //  Copyright 2011 Greencrayon.org. All rights reserved.
 //
 
-#include <iostream>
-#include <string>
-#include <iomanip>
-#include <vector>
-#include <fstream>
+#include "FinalProject.h"
 #include "course.cpp"
-
-using namespace std;
 
 
 
 class BioCourse: public Course{
 public:
-    BioCourse(string);
+    BioCourse(stdString);
     ~BioCourse();
     virtual float calcLabScoresPercent() const;
     virtual float calcQuizScoresPercent() const;
@@ -30,7 +24,7 @@ public:
 private:
 };
 
-BioCourse::BioCourse(string foo) : Course(foo)
+BioCourse::BioCourse(stdString foo) : Course(foo)
 {
 
 }
@@ -53,12 +47,7 @@ float BioCourse::calcExamScoresPercent() const
 }
 void BioCourse::getScoreData() const
 {
-    ifstream scoreFile("/Users/rob/Documents/FinalProject/Biology.txt", ios::in);
-    int foo;
-    while (scoreFile.getline()) {
-        scoreFile.getline("\n");
-        cout << foo << endl;
-    }
+ 
 }
 
 

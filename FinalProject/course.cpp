@@ -6,12 +6,12 @@
 //  Copyright 2011 Greencrayon.org. All rights reserved.
 //
 
-#include <iostream>
-#include <string>
+#include "FinalProject.h"
 #include "course.h"
+#include <fstream>
 
 
-Course::Course(string name)
+Course::Course(stdString name)
 {
     courseName = name;
 }
@@ -34,5 +34,10 @@ void Course::addLabScore(int score)
 }
 void Course::print()
 {
-    cout << courseName;
+    std::cout << courseName;
+}
+void Course::getScoreData(stdString fileName)
+{
+    
+    
 }

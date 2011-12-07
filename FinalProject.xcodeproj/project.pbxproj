@@ -10,6 +10,7 @@
 		D44482801472F54B00D130E6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D444827F1472F54B00D130E6 /* main.cpp */; };
 		D44482821472F54B00D130E6 /* FinalProject.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = D44482811472F54B00D130E6 /* FinalProject.1 */; };
 		D49637ED148EA4040009C6AB /* course.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D49637EC148EA4040009C6AB /* course.cpp */; };
+		D49637F2148F40430009C6AB /* FileIO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D49637F1148F40430009C6AB /* FileIO.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +33,7 @@
 		D49637EA148EA3B90009C6AB /* course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = course.h; sourceTree = "<group>"; };
 		D49637EC148EA4040009C6AB /* course.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = course.cpp; sourceTree = "<group>"; };
 		D49637EE148F30330009C6AB /* FinalProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinalProject.h; sourceTree = "<group>"; };
+		D49637F1148F40430009C6AB /* FileIO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FileIO.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +58,22 @@
 		D444827E1472F54B00D130E6 /* FinalProject */ = {
 			isa = PBXGroup;
 			children = (
+				D49637EF148F3F4B0009C6AB /* include */,
 				D444827F1472F54B00D130E6 /* main.cpp */,
-				D49637EE148F30330009C6AB /* FinalProject.h */,
 				D44482811472F54B00D130E6 /* FinalProject.1 */,
-				D49637EA148EA3B90009C6AB /* course.h */,
 				D49637EC148EA4040009C6AB /* course.cpp */,
+				D49637F1148F40430009C6AB /* FileIO.cpp */,
 			);
 			path = FinalProject;
+			sourceTree = "<group>";
+		};
+		D49637EF148F3F4B0009C6AB /* include */ = {
+			isa = PBXGroup;
+			children = (
+				D49637EA148EA3B90009C6AB /* course.h */,
+				D49637EE148F30330009C6AB /* FinalProject.h */,
+			);
+			name = include;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -117,6 +128,7 @@
 			files = (
 				D44482801472F54B00D130E6 /* main.cpp in Sources */,
 				D49637ED148EA4040009C6AB /* course.cpp in Sources */,
+				D49637F2148F40430009C6AB /* FileIO.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +152,7 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
@@ -160,7 +172,7 @@
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
