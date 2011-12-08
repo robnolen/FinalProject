@@ -36,8 +36,3 @@ void Course::print()
 {
     std::cout << courseName;
 }
-void Course::getScoreData(stdString fileName)
-{
-    
-    
-}

@@ -13,12 +13,12 @@
 
 std::stringstream getFileContents(stdString fileName)
 {
-    std::stringstream foo;
-    std::ifstream stream (fileName.c_str(), std::ios::in);
+    std::stringstream data;
+    std::ifstream fileStream (fileName.c_str(), std::ios::in);
     stdString line;
-    while (stream.getline(line))
+    while (getline(fileStream, line))
     {   
-        stream >> foo;
+        data << line;
     }
-    return foo;
+    return data;
 }
